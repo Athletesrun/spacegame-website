@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SpacegameWebsite
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.17.
@@ -29,3 +30,10 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# spacegame-website
+
+**This code is owned and copyright by Wing Development. Unauthorized access is not permitted.**
+
+A website for Wing Development's space Game
+>>>>>>> ad50d3b05a6ede7c66124acbaa9e2b3e499a9f72
