@@ -1,0 +1,19 @@
+@media (min-width: 800px) {
+    .titleHeader {
+        padding: 10px;
+    }
+
+    .h1Title {
+        margin: 0;
+        padding: 0;
+    }
+
+    left-nav {
+        display: inline-block;
+    }
+
+    body-container {
+        display: inline-block;
+        vertical-align: top;
+    }
+}

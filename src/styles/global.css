@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.titleHeader {
+    background-image: url("/assets/spacePicture2.jpg");
+    /*background-color: #000000;*/
+}
+
+.h1Title {
+    color: #FFFFFF;
+}
+
+* {
+    font-family: 'Open Sans', Georgia, 'sans-serif';
+}
