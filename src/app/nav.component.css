@@ -13,3 +13,9 @@
     font-size: 30px;
     color: #FFFFFF;
 }
+
+.welcomeItem {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #FFFFFF;
+}
