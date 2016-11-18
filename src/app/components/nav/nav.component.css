@@ -1,0 +1,37 @@
+.navContainer {
+    width: 200px;
+}
+
+.navList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navListItem {
+    margin: 0;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: background-color #FFFFFF, color #000000, transform .5s;
+}
+.navListItem:hover {
+    transition-property: background-color, color;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+}
+
+.welcomeItem {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.universeLink {
+    font-size: 30px;
+}
+
+.alphaCentauriLink {
+    font-size: 30px;
+}

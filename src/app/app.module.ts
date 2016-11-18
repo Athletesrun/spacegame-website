@@ -4,15 +4,34 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
-import { AppComponent } from './app.component';
-import { BodyComponent } from './body.component';
-import { NavComponent } from './nav.component';
+import { AppComponent } from './components/app/app.component';
+import { NavComponent } from './components/nav/nav.component';
+
+import { HomeComponent } from './components/home/home.component';
+import { MoonComponent } from './components/moon/moon.component';
+import { MarsComponent } from './components/mars/mars.component';
+import { JupiterComponent } from './components/jupiter/jupiter.component';
+import { SaturnComponent } from './components/saturn/saturn.component';
+import { UranusComponent } from './components/uranus/uranus.component';
+import { NeptuneComponent } from './components/neptune/neptune.component';
+import { PlutoComponent } from './components/pluto/pluto.component';
+import { AlphaCentauriComponent } from './components/alphaCentauri/alphaCentauri.component';
+import { AndromedaComponent } from './components/andromeda/andromeda.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         NavComponent,
-        BodyComponent
+        HomeComponent,
+        MoonComponent,
+        MarsComponent,
+        JupiterComponent,
+        SaturnComponent,
+        UranusComponent,
+        NeptuneComponent,
+        PlutoComponent,
+        AlphaCentauriComponent,
+        AndromedaComponent
     ],
     imports: [
         BrowserModule,
@@ -21,43 +40,43 @@ import { NavComponent } from './nav.component';
         RouterModule.forRoot([
             {
                 path: '',
-                component: BodyComponent
+                component: HomeComponent
             },
             {
                 path: 'moon',
-                component: BodyComponent
+                component: MoonComponent
             },
             {
                 path: 'mars',
-                component: BodyComponent
+                component: MarsComponent
             },
             {
                 path: 'jupiter',
-                component: BodyComponent
+                component: JupiterComponent
             },
             {
                 path: 'saturn',
-                component: BodyComponent
+                component: SaturnComponent
             },
             {
                 path: 'uranus',
-                component: BodyComponent
+                component: UranusComponent
             },
             {
                 path: 'neptune',
-                component: BodyComponent
+                component: NeptuneComponent
             },
             {
                 path: 'pluto',
-                component: BodyComponent
+                component: PlutoComponent
             },
             {
                 path: 'alphacentauri',
-                component: BodyComponent
+                component: AlphaCentauriComponent
             },
             {
                 path: 'andromeda',
-                component: BodyComponent
+                component: AndromedaComponent
             }
         ])
     ],
