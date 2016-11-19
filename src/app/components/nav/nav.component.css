@@ -1,5 +1,9 @@
 .navContainer {
-    width: 200px;
+    width: 100%
+}
+
+.navListHr {
+    width: 250px;
 }
 
 .navList {
@@ -15,6 +19,9 @@
     margin-left: 20px;
     text-decoration: none;
     transition: background-color #FFFFFF, color #000000, transform .5s;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 .navListItem:hover {
     transition-property: background-color, color;
@@ -23,13 +30,11 @@
 }
 
 .welcomeItem {
-    padding: 10px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #FFFFFF;
+    padding-left: 10px;
 }
 
 .universeLink {
-    font-size: 30px;
+    margin: 0;
 }
 
 .alphaCentauriLink {

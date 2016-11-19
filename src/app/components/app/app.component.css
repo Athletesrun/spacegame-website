@@ -1,7 +1,20 @@
+.titleHeader {
+    background-image: url("/assets/spacePicture2.jpg");
+    /*background-color: #000000;*/
+}
+
+.h1Title {
+    color: #FFFFFF;
+}
+
 .outletContainer {
     display: inline-block;
     vertical-align: top;
     background-color: #000000;
-    width: 500px;
+    width: 75%;
     height: 500px;
+}
+
+left-nav {
+    width: 20%;
 }

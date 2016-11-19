@@ -16,4 +16,9 @@
         display: inline-block;
         vertical-align: top;
     }
+
+    home {
+        width: 100%;
+    }
+
 }
