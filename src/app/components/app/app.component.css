@@ -1,10 +1,12 @@
 .titleHeader {
-    background-image: url("/assets/spacePicture2.jpg");
+    /*background-image: url("/assets/spacePicture2.jpg");*/
+    background-color: #000000;
     /*background-color: #000000;*/
 }
 
-.h1Title {
+.h1Link {
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 .outletContainer {

@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { transition } from '@angular/core';
+import { animate } from '@angular/core';
 
 import { AppComponent } from './components/app/app.component';
 import { NavComponent } from './components/nav/nav.component';
