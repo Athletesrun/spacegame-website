@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class JupiterComponent {
-    //@input()
-
-    planet = "mars";
+    public planetReadable:string = 'Jupiter';
+    public planetCodable:string = 'jupiter';
+    public extension:string = '.jpg';
 }

@@ -4,6 +4,7 @@
 
 .navListHr {
     width: 250px;
+    height: 2px;
 }
 
 .navList {
@@ -15,26 +16,27 @@
 .navListItem {
     margin: 0;
     font-size: 30px;
-    color: #FFFFFF;
     margin-left: 20px;
-    text-decoration: none;
-    transition: background-color #FFFFFF, color #000000, transform .5s;
     display: block;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-.navListItem:hover {
-    transition-property: background-color, color;
-    transition-duration: .5s;
-    transition-timing-function: ease-out;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
-.welcomeItem {
-    padding-left: 10px;
+.navListLink {
+    transition: background-color .5s, color .5s;
+    color: #2f2f2f;
+    text-decoration: none;
+    margin-left: 20px;
+    width: 200px;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
 }
 
-.universeLink {
-    margin: 0;
+.navListLink:hover {
+    background-color: #2f2f2f;
+    color: #e4e4e4;
+    cursor: pointer;
 }
 
 .alphaCentauriLink {

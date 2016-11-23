@@ -1,14 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'planet-header',
     template: `
-        <div>
-            <h1> {{planet}} </h1>
+        <div class="planetHeaderContainer" [ngStyle]="{'background-image': 'url(/assets/planets/' + planetCodable + extension + ')'}">
+            <h2 class="planetHeader">{{planetReadable}}</h2>
         </div>
-    `
+    `,
+    styles: [`
+        .planetHeader {
+            font-size: 80px;
+            color: #FFFFFF;
+            background-color: rgba(0, 0, 0, .5);
+        }
+        .planetHeaderContainer {
+
+        }
+
+    `]
 })
 
 export class PlanetHeaderComponent {
-
+    @Input() planetReadable = "The Moon";
+    @Input() planetCodable:string = "moon";
+    @Input() extension:string = ".jpg";
 }
