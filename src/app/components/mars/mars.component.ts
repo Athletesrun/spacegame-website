@@ -13,5 +13,4 @@ import { PlanetHeaderComponent } from '../planetHeader/planetHeader.component';
 export class MarsComponent {
     public planetReadable:string = 'Mars';
     public planetCodable:string = 'mars';
-    public extension:string = '.jpg';
 }

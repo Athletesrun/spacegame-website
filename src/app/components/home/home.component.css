@@ -26,12 +26,31 @@
     border-radius: 10px;
 }
 
-.universeText {
+.homeParagraph {
     color: #2f2f2f;
-    font-size: 40px;
+    font-size: 28px;
     text-align: justify;
     width: 94%;
-    padding: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
     padding-top: 0;
-    line-height: 55px;
+    line-height: 40px;
+}
+
+.homeList {
+    color: #2f2f2f;
+    width: 94%;
+    padding-left: 10%;
+    margin-top: -25px;
+}
+
+.homeListLink {
+    font-size: 26px;
+    color: #2f2f2f;
+    text-decoration: underline;
+    line-height: 50px;
+}
+
+.homeListLink:hover {
+    text-decoration: none;
 }

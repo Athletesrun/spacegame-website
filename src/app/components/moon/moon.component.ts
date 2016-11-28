@@ -11,7 +11,7 @@ import { PlanetHeaderComponent } from '../planetHeader/planetHeader.component';
 })
 
 export class MoonComponent {
+
     public planetReadable:string = 'The Moon';
     public planetCodable:string = 'moon';
-    public extension:string = '.jpg';
 }

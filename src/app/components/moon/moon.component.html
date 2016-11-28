@@ -1,4 +1,119 @@
-<planet-header></planet-header>
-<p>
-    Moon
+<planet-header [planetReadable]="planetReadable" [planetCodable]="planetCodable"></planet-header>
+<h3 class="planetSubHeader animated fadeInDown">Overview</h3>
+<table class="planetTable animated fadeInDown" border=1>
+    <tbody>
+        <tr>
+            <td class="planetTableCell"><strong>Diameter</strong></td>
+            <td class="planetTableCell">3473km</td>
+        </tr>
+        <tr>
+            <td class="planetTableCell"><strong>Mass</strong></td>
+            <td class="planetTableCell">7.342x10<sup>22</sup>kg</td>
+        </tr>
+        <tr>
+            <td class="planetTableCell"><strong>Age</strong></td>
+            <td class="planetTableCell">4.53 billion years</td>
+        </tr>
+        <tr>
+            <td class="planetTableCell"><strong>Life</strong></td>
+            <td class="planetTableCell">None</td>
+    </tbody>
+</table>
+<img class="overviewImage animated fadeInDown" src="/assets/planets/overview/moon.jpg" alt="The moon">
+<h3 class="planetSubHeader animated fadeInDown">Summary</h3>
+<p class="planetParagraph animated fadeInDown">
+    Chances are, you’ve spent some time looking upward towards the night sky, fascinated by the beauty of our closest cosmic neighbor. It has been there from the beginning of our existence until now, and will likely remain a constant familiar presence for many centuries to come.  Earth’s only moon, Luna (more commonly known as “the Moon”) isn’t just a pretty space rock orbiting our home. The Moon has been the center of influence and wonder since the very beginnings of our solar system.
 </p>
+<p class="planetParagraph animated fadeInDown">
+    Evidence suggests that the Moon formed about 4.5 billion years ago, only 30-50 million years after the birth of our solar system. The events that created the Moon were far from uneventful. Its existence came about after a smaller earth and a mars-sized planet connected in a violent collision, sending debris into orbit that eventually merged to form our Moon. Over the next couple billion years, the Moon’s surface was bombarded by asteroids and meteors; creating the familiar landscape we see today.
+</p>
+<p class="planetParagraph animated fadeInDown">
+    So what about the moon today? It lies is synchronous orbit around the Earth, meaning that only one side (the “near side”) of the moon always faces towards the earth, while the other side (the “far side” or “dark side”) faces towards the dark abyss known as space. The first unmanned mission to the moon was made in 1959 by Luna 2 of the Soviet Lunar Program, and the first manned mission was made by the United States’ Apollo 11 in 1969. The United States went on to launch 18 Apollo missions, including 16 successful missions and 2 failures (Apollo 1 and Apollo 13). The last mission was Apollo 17, in 1972.
+</p>
+<p class="planetParagraph animated fadeInDown">
+    Exploration didn’t stop there! In In 1990 Japan visited the Moon with the “Hiten” spacecraft, becoming the third country to place an object in orbit around the Moon. In 2003, the European Space Agency launched a small, low-cost lunar orbital probe called “SMART 1” designed to take 3D X-ray and infrared imagery of the Moon’s surface. Again In 2007, Japan launched the “SELENE” spacecraft, with the objectives to gather data about the Moon’s origin and develop technology for the future. In 2007, China began the Chinese Lunar Exploration Program for exploring the Moon and is investigating the possibility of lunar mining. And in 2008, India's national space agency, Indian Space Research Organization (ISRO), launched “Chandrayaan-1”, an unmanned lunar orbiter.
+</p>
+<p class="planetParagraph animated fadeInDown">
+    But be careful if you’re making plans to visit the Moon. It doesn’t contain any oxygen, and is unprotected from cosmic rays, meteorites and solar winds. Not to mention, the average temperature at the Moon’s equator is -64 degrees Fahrenheit (-53 degrees Celsius). It wouldn’t make a very good vacation!
+</p>
+<h3 class="planetSubHeader animated fadeInDown">Fun Facts</h3>  <!-- CONVERT TO LIST UL-->
+<ul class="funFactList animated fadeInDown">
+    <li>
+        <p class="funFactTitle">
+            The Moon is slowly drifting away from Earth!
+        </p>
+        <p class="funFactDescription">
+            The Moon is moving approximately 3.8 cm away from Earth every year. It will continue to do so for about 50 million years. By that time, the moon will take about 47 days to orbit the earth instead of the current 27.3 days.
+        </p>
+    </li>
+    <li>
+        <p class="funFactTitle">
+            You would weigh much less on the Moon
+        </p>
+        <p class="funFactDescription">
+            Because the Moon is much smaller, it has much less gravity than Earth. You would only weight one-sixth (16.5%) of your weight on Earth!
+        </p>
+    </li>
+    <li>
+        <p class="funFactTitle">
+            The Moon is the fifth largest moon in the Solar System. Smaller than only 4 moons of Jupiter and Saturn.
+        </p>
+    </li>
+    <li>
+        <p class="funFactTitle">
+            During the 1950’s, the US considered detonating a nuclear bomb on the Moon
+        </p>
+        <p class="funFactDescription">
+            At a time during the Cold War when the Soviet Union was achieving more in space exploration, the United States considered a Secret Project “Project A119” in which they would detonate a nuclear warhead on the Moon to demonstrate their strength and capabilities.
+        </p>
+    </li>
+    <li>
+        <p class="funFactTitle">
+            The moon has only been walked on by 12 people, all American males!
+        </p>
+    </li>
+    <li>
+        <p class="funFactTitle">
+            Earth’s ocean tides are caused by the Moon’s gravitational pull.
+        </p>
+    </li>
+    <li>
+        <p class="funFactTitle">
+            The far side of the Moon looks quite different than the near side due to its lack of maria (ancient pools of solidified lava).
+        </p>
+    </li>
+    <li>
+        <p class="funFactTitle">
+            Although research is continuing, most scientists agree that the Moon features small amounts of water.
+        </p>
+    </li>
+    <li>
+        <p class="funFactTitle">
+            Earth’s only moon right? Maybe not…
+        </p>
+        <p class="funFactDescription">
+            In 1999, scientists found that a 3-mile- (5-kilometer-) wide asteroid known as Cruithne may be caught in Earth's gravitational grip, thereby becoming a satellite of our planet. It takes 770 years to complete a horseshoe-shaped orbit around Earth, and it will remain in a suspended state around Earth for at least 5,000 years.
+        </p>
+    </li>
+    <li>
+        <p class="funFactTitle">
+            Ever heard of Moon trees?
+        </p>
+        <p class="funFactDescription">
+            In 1971, Apollo 14 astronaut Stuart Roosa took more than 400 seeds with him to the Moon. Later, they were planted various places on Earth, and came to be known as moon trees. You’ll be happy to hear that most of them are doing just fine.
+        </p>
+    </li>
+    <li>
+        <p class="funFactTitle">
+            The Moon is not round (or spherical). Instead, it's shaped like an egg!
+        </p>
+    </li>
+    <li>
+        <p class="funFactTitle">
+            There may be life on the Moon…
+        </p>
+        <p class="funFactDescription">
+            Ok, here’s the truth: there IS life on the Moon. But not the life you’re thinking of. Geologically speaking, the Moon isn’t a completely dead place. Lunar astronauts have used seismometers to measure small moonquakes, originating several miles beneath the surface. They are believed to be caused by the earth’s gravitational pull.
+        </p>
+    </li>
+</ul>

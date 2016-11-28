@@ -1,10 +1,17 @@
 <section class="homeContainer">
-    <div class="universeHeader">
-        <h2 class="universeH2">The Universe</h2>
-    </div>
-    <div class="universeText">
-        <p>The universe is an expansive place. It includes hundreds of billions of galaxies each with hundreads of billions of stars. I don't know what else to write here.</p>
-        <p>Explore this website to learn more about the place in which we all live.</p>
-        <p><a>Download</a> the app to learn more about space exploration.</p>
-    </div>
+    <planet-header [planetReadable]="planetReadable" [planetCodable]="planetCodable"></planet-header>
+    <p class="homeParagraph animated fadeInDown">Welcome to the universe. In the words of Carl Sagan, the universe "is all that is or was or ever will be." From our vantage point here on Earth, we can see that the universe is at least 91 billion light years wide. Our universe was born 13.7 billion years ago with the explosion of the big bang. Since then it has been constantly expanding outwards. Scientists speculate that in many trillions of years, the universe will become too cold and spread out in order to sustain large bodies of mass. This will mark the end of all life.</p>
+    <p class="homeParagraph animated fadeInDown">Explore this website to learn more about the places and planets in the solar system that we're familiar with.</p>
+    <ul class="homeList">
+        <li><a class="homeListLink animated fadeInDown" routerLink="/moon">Moon</a></li>
+        <li><a class="homeListLink animated fadeInDown" routerLink="/mars">Mars</a></li>
+        <li><a class="homeListLink animated fadeInDown" routerLink="/jupiter">Jupiter</a></li>
+        <li><a class="homeListLink animated fadeInDown" routerLink="/saturn">Saturn</a></li>
+        <li><a class="homeListLink animated fadeInDown" routerLink="/uranus">Uranus</a></li>
+        <li><a class="homeListLink animated fadeInDown" routerLink="/neptune">Neptune</a></li>
+        <li><a class="homeListLink animated fadeInDown" routerLink="/pluto">Pluto</a></li>
+        <li><a class="homeListLink animated fadeInDown" routerLink="/alphacentauri">Alpha Centauri</a></li>
+        <li><a class="homeListLink animated fadeInDown" routerLink="/adromeda">Andromeda</a></li>
+    </ul>
+    <p class="homeParagraph animated fadeInDown"><a>Download the game</a> to learn more about space exploration.</p>
 </section>

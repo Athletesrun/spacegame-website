@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
+import { PlanetHeaderComponent } from '../planetHeader/planetHeader.component';
 
 @Component({
   selector: 'pluto',
   templateUrl: './pluto.component.html',
-  styleUrls: ['./pluto.component.css']
+  styleUrls: ['./pluto.component.css'],
+  providers: [
+      PlanetHeaderComponent
+  ]
 })
 
 export class PlutoComponent {
-    //@input()
-
-    planet = "mars";
+    public planetReadable:string = 'Pluto';
+    public planetCodable:string = 'pluto';
 }

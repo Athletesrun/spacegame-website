@@ -1,10 +1,13 @@
 .navContainer {
-    width: 100%
+    width: 100%;
 }
 
 .navListHr {
     width: 250px;
     height: 2px;
+    color: #2f2f2f;
+    background-color: #2f2f2f;
+    border: 0;
 }
 
 .navList {
@@ -38,6 +41,16 @@
     color: #e4e4e4;
     cursor: pointer;
 }
+
+#selectedNavItem {
+    background-color: #2f2f2f;
+    color: #e4e4e4;
+}
+
+/*#selectedNavItem:hover {
+    background-color: #e4e4e4;
+    color: #2f2f2f;
+}*/
 
 .alphaCentauriLink {
     font-size: 30px;
