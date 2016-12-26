@@ -1,3 +1,181 @@
-@import '/styles/desktop.css';
-@import '/styles/global.css';
-@import '/styles/mobile.css';
+* {
+    font-family: 'Open Sans', Georgia, 'sans-serif';
+}
+
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: #e4e4e4;
+}
+
+.h1Title {
+    margin: 0;
+    padding: 0;
+}
+
+@media(min-width: 960px) {
+    .titleHeader {
+        background-color: #2f2f2f;
+        z-index: 999999;
+    }
+
+    .h1Link {
+        color: #e4e4e4;
+        text-decoration: none;
+    }
+
+    .outletContainer {
+        display: inline-block;
+        vertical-align: top;
+        background-color: #e4e4e4;
+        width: 75%;
+        margin-top: 10px;
+        padding-bottom: 60px;
+        max-width: 1380px;
+    }
+
+    left-nav {
+        width: 20%;
+        display: inline-block;
+    }
+
+    .titleHeader {
+        padding: 10px;
+    }
+
+    body-container {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .planetParagraph {
+        color: #2f2f2f;
+        font-size: 18px;
+        width: 90%;
+        margin-left: 5%;
+        line-height: 30px;
+        text-align: justify;
+    }
+
+    .funFactList {
+        width: 97%;
+        margin-left: 3%;
+        color: #2f2f2f;
+    }
+
+    .funFactTitle {
+        font-size: 18px;
+        list-style-position: inside;
+        font-weight: bold;
+    }
+
+    .funFactDescription {
+        margin: 0;
+        font-size: 16px;
+        width: 92%;
+        margin-left: 4%;
+        text-align: justify;
+    }
+
+    .planetSubHeader {
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .overviewImage {
+        margin-left: 50px;
+        border-radius: 10px;
+    }
+
+    .planetTable {
+        border-collapse: collapse;
+        border-color: #2f2f2f;
+        margin-left: 4%;
+        display: inline-block;
+    }
+
+    .planetTableCell {
+        color: #2f2f2f;
+        padding: 10px;
+        width: 100px;
+        font-size: 16px;
+    }
+
+    .menuIcon {
+        display: none;
+    }
+}
+
+@media(min-width: 960px) and (max-width: 1100px) {
+
+}
+
+@media(max-width: 960px) {
+
+    .titleHeader {
+        display: none;
+    }
+
+    .h1Title {
+        margin: auto;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .h1Link {
+        color: #e4e4e4;
+        text-decoration: none;
+    }
+
+    .planetSubHeader {
+        margin-left: 10px;
+    }
+
+    .planetParagraph, .homeParagraph {
+        width: 90%;
+        margin-left: 5%;
+        text-align: justify;
+    }
+
+    .planetTable {
+        text-align:center;
+        margin: auto;
+    }
+
+    .overviewImage {
+        width: 300px;
+        height: 300px;
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
+    .funFactList {
+        width: 85%;
+    }
+
+    .menuIcon {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        z-index: 9999999999;
+    }
+
+    .funFactTitle {
+        font-size: 18px;
+        list-style-position: inside;
+        font-weight: bold;
+    }
+
+    .funFactDescription {
+        margin: 0;
+        font-size: 16px;
+        width: 92%;
+        margin-left: 4%;
+        text-align: justify;
+    }
+}

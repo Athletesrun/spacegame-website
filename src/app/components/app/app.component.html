@@ -1,6 +1,10 @@
 <header class="titleHeader">
     <h1 class="h1Title"><a class="h1Link" routerLink="/">An Exploration of the Universe</a></h1>
 </header>
+<div class="menuIcon">
+    <img (click)="openNav($event)" height="35" width="35" src="/assets/hamburger.png" alt="menu">
+</div>
+<div (click)="closeNav($event)" class="closeMenuField"></div>
 <left-nav>Loading...</left-nav>
 <div class="outletContainer">
     <router-outlet></router-outlet>

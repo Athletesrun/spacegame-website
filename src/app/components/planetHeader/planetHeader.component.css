@@ -1,0 +1,59 @@
+.planetHeaderContainer {
+    color: #FFFFFF;
+    background-image: url("/assets/planets/universe.jpg");
+    overflow: hidden;
+}
+.planetHeader {
+    color: #FFFFFF;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+@media(min-width: 960px) {
+    .planetHeaderContainer {
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+
+    .planetHeader {
+        margin-top: 95px;
+        font-size: 80px;
+        width: 600px;
+        border-radius: 6px;
+    }
+}
+
+@media(max-width: 1110px) and (min-width: 960px) {
+    .planetHeaderContainer {
+        background-size: cover;
+        height: 250px;
+        width: 100%;
+    }
+    .planetHeader {
+        margin-top: 95px;
+        font-size: 70px;
+        width: 600px;
+        border-radius: 4px;
+    }
+}
+
+@media(max-width: 960px) {
+
+    .planetHeaderContainer {
+        width: 100%;
+        background-size: cover;
+    }
+
+    .planetHeader {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 26px;
+    }
+
+    nav-container: {
+        display: none;
+    }
+}

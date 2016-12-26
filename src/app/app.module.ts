@@ -8,7 +8,8 @@ import { animate } from '@angular/core';
 
 import { AppComponent } from './components/app/app.component';
 import { NavComponent } from './components/nav/nav.component';
-import { PlanetHeaderComponent} from './components/planetHeader/planetHeader.component';
+import { PlanetHeaderComponent } from './components/planetHeader/planetHeader.component';
+import { PageNotFoundComponent } from './components/pageNotFound/pageNotFound.component.ts';
 
 import { HomeComponent } from './components/home/home.component';
 import { MoonComponent } from './components/moon/moon.component';
@@ -26,6 +27,7 @@ import { AndromedaComponent } from './components/andromeda/andromeda.component';
         AppComponent,
         NavComponent,
         PlanetHeaderComponent,
+        PageNotFoundComponent,
         HomeComponent,
         MoonComponent,
         MarsComponent,
@@ -81,6 +83,10 @@ import { AndromedaComponent } from './components/andromeda/andromeda.component';
             {
                 path: 'andromeda',
                 component: AndromedaComponent
+            },
+            {
+                path: '**',
+                component: PageNotFoundComponent
             }
         ])
     ],
