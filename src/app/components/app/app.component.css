@@ -1,3 +1,35 @@
+.navContainer {
+    width: 100%;
+}
+
+.navListHr {
+    color: #2f2f2f;
+    background-color: #2f2f2f;
+}
+
+.navList {
+    list-style: none;
+}
+
+.navListLink {
+    color: #2f2f2f;
+    text-decoration: none;
+}
+
+.navListLink:hover {
+    background-color: #2f2f2f;
+    color: #e4e4e4;
+    cursor: pointer;
+}
+
+#selectedNavItem {
+    background-color: #2f2f2f;
+    color: #e4e4e4;
+}
+
+.closeButton {
+    display: none;
+}
 @media(min-width: 960px) {
 
     .closeMenuField {
@@ -12,6 +44,7 @@
     .h1Link {
         color: #e4e4e4;
         text-decoration: none;
+        cursor: pointer;
     }
 
     .outletContainer {
@@ -22,11 +55,6 @@
         margin-top: 10px;
         padding-bottom: 60px;
         max-width: 1380px;
-    }
-
-    left-nav {
-        width: 20%;
-        display: inline-block;
     }
 
     .titleHeader {
@@ -90,10 +118,65 @@
         width: 100px;
         font-size: 16px;
     }
+    .navContainer {
+        width: 20%;
+        display: inline-block;
+    }
+
+    .navListHr {
+        width: 230px;
+        height: 2px;
+        border: 0;
+        margin-left: 20px;
+        text-align: left;
+    }
+
+    .navList {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navListItem {
+        margin: 0;
+        font-size: 30px;
+        margin-left: 20px;
+        display: block;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .navListLink {
+        transition: background-color .5s, color .5s;
+        width: 180px;
+        padding: 10px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .alphaCentauriLink {
+        font-size: 30px;
+    }
 }
 
 @media(max-width: 1100px) and (min-width: 960px) {
     .menuIcon:hover {
+        cursor: pointer;
+    }
+    .navListItem {
+        width: 150px;
+    }
+
+    .navListLink {
+        width: 150px;
+        font-size: 27px;
+        padding: 5px;
+    }
+
+    .navListHr {
+        width: 150px;
+    }
+
+    .closeButton:hover {
         cursor: pointer;
     }
 }
@@ -133,6 +216,51 @@
     }
 
     .menuIcon:hover {
+        cursor: pointer;
+    }
+    .navContainer {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 99999999999999999999999;
+        top: 0;
+        left: 0;
+        background-color: #2f2f2f;
+        overflow-x: hidden;
+        padding-top: 20px;
+        transition: 0.5s;
+    }
+
+    .navList {
+        line-height: 40px;
+    }
+
+    .navListHr {
+        width: 150px;
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .navListItem {
+        font-size: 20px;
+    }
+
+    .navListLink {
+        color: #efefef;
+    }
+
+    #selectedNavItem {
+        text-decoration: underline;
+    }
+
+    .closeButton {
+        display: block;
+        margin-left: 20px;
+    }
+
+    .closeButton:hover {
         cursor: pointer;
     }
 }

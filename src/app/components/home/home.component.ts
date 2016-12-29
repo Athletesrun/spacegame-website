@@ -1,26 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { PlanetHeaderComponent } from '../planetHeader/planetHeader.component';
-import { NavComponent } from '../nav/nav.component.ts';
+import { NavService } from '../../services/nav/nav.service';
 
 @Component({
   selector: 'home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   providers: [
-      PlanetHeaderComponent,
-      NavComponent
+      PlanetHeaderComponent
   ]
 })
 
 export class HomeComponent {
 
-    constructor(private navComponent: NavComponent) {}
-
     public planetReadable:string = 'The Universe';
     public planetCodable:string = 'universe';
 
-    openLink(event, planet) {
-        event.preventDefault();
-        this.navComponent.clicked(event, planet);
+    constructor(private navService: NavService) {
+
+    }
+
+    openLinkFromUniverse(event, planet) {
+
+        this.navService.notifySelectedPlanet(planet);
+
     }
 }

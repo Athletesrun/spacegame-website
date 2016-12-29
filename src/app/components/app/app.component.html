@@ -1,11 +1,26 @@
 <header class="titleHeader">
-    <h1 class="h1Title"><a class="h1Link" routerLink="/">An Exploration of the Universe</a></h1>
+    <h1 class="h1Title"><a class="h1Link" (click)="clicked($event, 'universe')">An Exploration of the Universe</a></h1>
 </header>
 <div class="menuIcon">
     <img (click)="openNav($event)" height="35" width="35" src="/assets/hamburger.png" alt="menu">
 </div>
 <div (click)="closeNav($event)" class="closeMenuField"></div>
-<left-nav>Loading...</left-nav>
+<nav class="navContainer">
+    <img (click)="closeNav($event)" height="20" width="20" class="closeButton" src="/assets/xButton.png" alt="Close">
+    <ul class="navList">
+        <li class="navListItem welcomeItem"><a [id]="selectedId('universe')" (click)="clicked($event, 'universe')" class="navListLink" routerLink="/">Universe</a></li>
+        <hr class="navListHr">
+        <li class="navListItem"><a [id]="selectedId('moon')" (click)="clicked($event, 'moon')" class="navListLink">Moon</a></li>
+        <li class="navListItem"><a [id]="selectedId('mars')" (click)="clicked($event, 'mars')" class="navListLink">Mars</a></li>
+        <li class="navListItem"><a [id]="selectedId('jupiter')" (click)="clicked($event, 'jupiter')" class="navListLink">Jupiter</a></li>
+        <li class="navListItem"><a [id]="selectedId('saturn')" (click)="clicked($event, 'saturn')" class="navListLink">Saturn</a></li>
+        <li class="navListItem"><a [id]="selectedId('uranus')" (click)="clicked($event, 'uranus')" class="navListLink">Uranus</a></li>
+        <li class="navListItem"><a [id]="selectedId('neptune')" (click)="clicked($event, 'neptune')" class="navListLink">Neptune</a></li>
+        <li class="navListItem"><a [id]="selectedId('pluto')" (click)="clicked($event, 'pluto')" class="navListLink">Pluto</a></li>
+        <li class="navListItem"><a [id]="selectedId('alphaCentauri')" (click)="clicked($event, 'alphaCentauri')" class="navListLink">Alpha Centauri</a></li>
+        <li class="navListItem"><a [id]="selectedId('andromeda')" (click)="clicked($event, 'andromeda')" class="navListLink">Andromeda</a></li>
+    </ul>
+</nav>
 <div class="outletContainer">
     <router-outlet></router-outlet>
 </div>
